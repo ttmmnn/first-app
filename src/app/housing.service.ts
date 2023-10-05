@@ -110,7 +110,7 @@ export class HousingService {
     },
   ];
 
-  getAllHousingLocatins(): HousingLocation[] {
+  getAllHousingLocations(): HousingLocation[] {
     return this.housingLocationList;
   }
 
