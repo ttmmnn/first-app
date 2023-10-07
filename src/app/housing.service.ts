@@ -8,6 +8,8 @@ export class HousingService {
   // JSONサーバーは、モックREST APIを作成するために使用されるオープンソースツール。そのURLを指定。
   url = 'http://localhost:3000/locations';
 
+  constructor() {}
+
   // 非同期コードを使ってHTTPでGETリクエストを行う
   async getAllHousingLocations(): Promise<HousingLocation[]> {
     const data = await fetch(this.url);
